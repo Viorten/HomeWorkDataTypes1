@@ -17,7 +17,7 @@ let strings = ["Привіт", "Світ", "Привіт", "Світ",
 alert( unique(strings) ); // Привіт, Світ, :-O*/
 
 /* - - - Моя відповідь - - -*/
-function unique(arr) {
+/*function unique(arr) {
   let result = [];
   for (str of arr) {
     if (!result.includes(str)) {
@@ -31,4 +31,9 @@ let strings = ["Привіт", "Світ", "Привіт", "Світ",
   "Привіт", "Привіт", "Світ", "Світ", ":-O"
 ];
 
-console.log( unique(strings) )
+console.log( unique(strings) )*/
+
+let strings = new Set (["Привіт", "Світ", "Привіт", "Світ",
+  "Привіт", "Привіт", "Світ", "Світ", ":-O"
+]);
+for (let value of strings) console.log(value);
